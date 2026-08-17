@@ -10,6 +10,12 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 8001;
 
+app.use(express.json())
+
+app.get("/", (req, res) => {
+    res.send("Auth service is running");
+});
+
 app.listen(PORT, () => {
     console.log(`Service is running on port ${PORT}`);
     connectDb();

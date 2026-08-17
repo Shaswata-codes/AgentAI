@@ -137,3 +137,5 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+serviceAccountKey.json
+server/services/auth/serviceAccountKey.json
